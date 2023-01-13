@@ -6,16 +6,16 @@ Build #IC-223.8214.52, built on December 20, 2022
 @Author aldic  a.k.a Aldi Cahya Ramadhan
 Java Developer
 Created on 12/01/2023 21:20
-@Last Modified 12/01/2023 21:20
+@Last Modified 13/01/2023 13:50
 Version 1.1
 */
-import java.sql.SQLOutput;
+//import java.sql.SQLOutput;
 import java.util.Scanner;
 public class LoopthroughArray {
 
     public static void main(String[] args) {
 
-        int a =0;
+//        int a =0;
 
 //        System.out.println(a);
 
@@ -34,10 +34,10 @@ public class LoopthroughArray {
 //        intArr2 [3] = 8;
 //        intArr2 [4] = 10;
 
-        String [][]cars = {
-                {"Volvo", "BMW", "Ford", "Mazda"},
-                {"HONDA","TOYOTA","DAIHATSU"}
-        };
+//        String [][]cars = {
+//                {"Volvo", "BMW", "Ford", "Mazda"},
+//                {"HONDA","TOYOTA","DAIHATSU"}
+//        };
 
 
 //        System.out.println("LENGTH 2 DIMENSI cars "+cars.length);
@@ -116,21 +116,30 @@ DUA DIMENSI
 //            System.out.println();
 //        }
 
-//        Scanner sc = new Scanner(System.in);
-//        String strInput = sc.nextLine();
-//        char chX = 'I';
-//        int intX = 0;
-//        int intJumlah =0;
-//        for (int i=0;i<strInput.length();i++)
-//        {
-//            chX =strInput.charAt(i);
-//            intX = chX;
-//            if(intX>=65 && intX<=97)
-//            {
-//                intJumlah=intJumlah+intX;
-//            }
-//            System.out.println("INDEX KE"+i+" ADALAH HURUF "+strInput.charAt(i));
-//        }
+
+       /* Konversi Char Ke ASCII */
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan Kata : ");
+        String strInput = sc.nextLine();
+        char chX;
+        int intX;
+        int intJumlah =0;
+        for (int i=0;i<strInput.length();i++)
+        {
+            chX =strInput.charAt(i);
+            intX = chX;
+            if((intX>=65 && intX<=97) || (intX>=97 && intX<=122) || (intX>=48 && intX<=57) || (intX>=32 && intX<=47))
+            {
+                intJumlah=intJumlah+intX;
+
+
+            }
+            System.out.println("Number ASCII : "+strInput.charAt(i)+" -> "+intX);
+            System.out.println("Jumlah Ke : "+intJumlah);
+
+        }
+
+
 
 
 
