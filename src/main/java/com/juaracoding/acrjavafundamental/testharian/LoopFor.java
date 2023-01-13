@@ -1,4 +1,4 @@
-package com.juaracoding.acrjavafundamental;
+package com.juaracoding.acrjavafundamental.testharian;
 /*
 IntelliJ IDEA 2022.3.1 (Community Edition)
 Build #IC-223.8214.52, built on December 20, 2022
@@ -12,15 +12,22 @@ Cores: 8
 Kotlin: 223-1.7.21-release-272-IJ8214.52
 @Author aldic 
 Java Developer
-Created on 11/01/2023 21:22
-@Last Modified 11/01/2023 21:22
+Created on 10/01/2023 19:25
+@Last Modified 10/01/2023 19:25
 Version 1.1
 */
 
-public class MathMethods {
+public class LoopFor {
 
     public static void main(String[] args) {
-        System.out.print((int)Math.ceil(9.001)+ "DAN");
-        System.out.print((int)Math.floor(4.6)+ "DAN");
+
+        for (int i=0;i<10;i++)
+        {
+
+            for (int j=0;j<20;j++)
+            {
+                System.out.println("NILAI I adalah "+i+" NILAI J ADALAH "+j);
+            }
+        }
     }
 }

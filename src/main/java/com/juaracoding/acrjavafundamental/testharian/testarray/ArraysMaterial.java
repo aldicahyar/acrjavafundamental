@@ -1,4 +1,4 @@
-package com.juaracoding.acrjavafundamental.arrayinjavaday8;
+package com.juaracoding.acrjavafundamental.testharian.testarray;
 
 /*
 IntelliJ IDEA 2022.3.1 (Community Edition)

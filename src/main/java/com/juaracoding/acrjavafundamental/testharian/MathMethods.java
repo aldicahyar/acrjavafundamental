@@ -1,4 +1,4 @@
-package com.juaracoding.acrjavafundamental;
+package com.juaracoding.acrjavafundamental.testharian;
 /*
 IntelliJ IDEA 2022.3.1 (Community Edition)
 Build #IC-223.8214.52, built on December 20, 2022
@@ -12,23 +12,15 @@ Cores: 8
 Kotlin: 223-1.7.21-release-272-IJ8214.52
 @Author aldic 
 Java Developer
-Created on 11/01/2023 20:06
-@Last Modified 11/01/2023 20:06
+Created on 11/01/2023 21:22
+@Last Modified 11/01/2023 21:22
 Version 1.1
 */
 
-public class GanjilGenap {
+public class MathMethods {
 
     public static void main(String[] args) {
-        int angka = 11;
-
-        if(angka%2==0)
-        {
-            System.out.println("Angka "+angka+" adalah bilangan genap");
-        }
-        else
-        {
-            System.out.println("Angka "+angka+" adalah bilangan ganjil");
-        }
+        System.out.print((int)Math.ceil(9.001)+ "DAN");
+        System.out.print((int)Math.floor(4.6)+ "DAN");
     }
 }

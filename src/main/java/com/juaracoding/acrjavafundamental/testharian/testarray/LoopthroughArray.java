@@ -1,4 +1,4 @@
-package com.juaracoding.acrjavafundamental.arrayinjavaday8;
+package com.juaracoding.acrjavafundamental.testharian.testarray;
 
 /*
 IntelliJ IDEA 2022.3.1 (Community Edition)
@@ -10,6 +10,7 @@ Created on 12/01/2023 21:20
 Version 1.1
 */
 //import java.sql.SQLOutput;
+
 import java.util.Scanner;
 public class LoopthroughArray {
 
@@ -19,8 +20,8 @@ public class LoopthroughArray {
 
 //        System.out.println(a);
 
-//        int [] intArr = {6,4,9,8,10};
-//        System.out.println("NILAI intArr index ke 2 "+intArr[2]);
+//        int [] intArr = {6,3,1,2};
+//        System.out.println("NILAI intArr index ke 2 "+intArr[3]);
 //        System.out.println("Alamat Memory Deklarasi ke - 1 : "+intArr);
 //
 //        intArr = new int[10];
@@ -118,26 +119,47 @@ DUA DIMENSI
 
 
        /* Konversi Char Ke ASCII */
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Masukkan Kata : ");
-        String strInput = sc.nextLine();
-        char chX;
-        int intX;
-        int intJumlah =0;
-        for (int i=0;i<strInput.length();i++)
-        {
-            chX =strInput.charAt(i);
-            intX = chX;
-            if((intX>=65 && intX<=97) || (intX>=97 && intX<=122) || (intX>=48 && intX<=57) || (intX>=32 && intX<=47))
-            {
-                intJumlah=intJumlah+intX;
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Masukkan Kata : ");
+//        String strInput = sc.nextLine();
+//        char chX;
+//        int intX;
+//        int intJumlah =0;
+//        for (int i=0;i<strInput.length();i++)
+//        {
+//            chX =strInput.charAt(i);
+//            intX = chX;
+//            if((intX>=65 && intX<=97) || (intX>=97 && intX<=122) || (intX>=48 && intX<=57) || (intX>=32 && intX<=47))
+//            {
+//                intJumlah=intJumlah+intX;
+//
+//
+//            }
+//            System.out.println("Number ASCII : "+strInput.charAt(i)+" -> "+intX);
+//            System.out.println("Jumlah Ke : "+intJumlah);
+//
+//        }
+
+//        int [] array = {2, 7, 3, 5, 8, 9};
+//        int kuncen = array[0];
+//        for (int i = 0; i < array.length; i++)
+//        {
+//            if (array[i] > kuncen)
+//                kuncen = array[i];
+//        }
+//        System.out.print(kuncen);
+
+        int [] tahun = new int [7];
+
+        tahun[0] = 2004;
+
+        tahun[1] = 2006;
+
+        System.out.println(tahun[0] + " " + tahun[1] + " " + tahun[1]);
 
 
-            }
-            System.out.println("Number ASCII : "+strInput.charAt(i)+" -> "+intX);
-            System.out.println("Jumlah Ke : "+intJumlah);
 
-        }
+
 
 
 
