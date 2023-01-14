@@ -120,26 +120,27 @@ DUA DIMENSI
 
 
        /* Konversi Char Ke ASCII */
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("Masukkan Kata : ");
-//        String strInput = sc.nextLine();
-//        char chX;
-//        int intX;
-//        int intJumlah =0;
-//        for (int i=0;i<strInput.length();i++)
-//        {
-//            chX =strInput.charAt(i);
-//            intX = chX;
-//            if((intX>=65 && intX<=97) || (intX>=97 && intX<=122) || (intX>=48 && intX<=57) || (intX>=32 && intX<=47))
-//            {
-//                intJumlah=intJumlah+intX;
-//
-//
-//            }
-//            System.out.println("Number ASCII : "+strInput.charAt(i)+" -> "+intX);
-//            System.out.println("Jumlah Ke : "+intJumlah);
-//
-//        }
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan Kata : ");
+        String strInput = sc.nextLine();
+        char chX;
+        int intX;
+        int intJumlah =0;
+        for (int i=0;i<strInput.length();i++)
+        {
+            chX =strInput.charAt(i);
+            intX = chX;
+            if((intX>=65 && intX<=90) || (intX>=48 && intX<=57) || (intX>=32 && intX<=47)
+            || (intX>=58 && intX<=64))
+            {
+                intJumlah=intJumlah+intX;
+
+
+            }
+            System.out.println("Number ASCII : "+strInput.charAt(i)+" -> "+intX);
+            System.out.println("Jumlah Ke : "+intJumlah);
+
+        }
 
 //        int [] array = {2, 7, 3, 5, 8, 9};
 //        int kuncen = array[0];
@@ -150,13 +151,13 @@ DUA DIMENSI
 //        }
 //        System.out.print(kuncen);
 
-        int [] tahun = new int [7];
-
-        tahun[0] = 2004;
-
-        tahun[1] = 2006;
-
-        System.out.println(tahun[0] + " " + tahun[1] + " " + tahun[1]);
+//        int [] tahun = new int [7];
+//
+//        tahun[0] = 2004;
+//
+//        tahun[1] = 2006;
+//
+//        System.out.println(tahun[0] + " " + tahun[1] + " " + tahun[1]);
 
 
 
