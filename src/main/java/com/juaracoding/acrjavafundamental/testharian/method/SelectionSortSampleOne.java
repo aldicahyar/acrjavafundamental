@@ -412,4 +412,16 @@ public class SelectionSortSampleOne {
         }
         System.out.print(aft.substring(0,aft.length()-1));
     }//end of the procedure selectionSortASCChar
+
+    public static void printLoop(String header,int[] arr){
+        String bef = "";
+        sBuild.setLength(0);
+        System.out.println("\n=="+header+"==");
+
+        for (int intArr : arr)
+        {
+            bef = sBuild.append(intArr).append(",").toString();
+        }
+        System.out.print(bef.substring(0,bef.length()-1));
+    }
 }

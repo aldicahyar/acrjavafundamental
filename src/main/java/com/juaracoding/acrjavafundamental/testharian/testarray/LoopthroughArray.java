@@ -123,6 +123,10 @@ DUA DIMENSI
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan Kata : ");
         String strInput = sc.nextLine();
+        System.out.println(strInput);
+
+        System.out.println("Panjang Karakter Input adalah "+strInput.length());
+//        System.out.println(strInput.charAt(11));
         char chX;
         int intX;
         int intJumlah =0;
@@ -134,13 +138,14 @@ DUA DIMENSI
             || (intX>=58 && intX<=64))
             {
                 intJumlah=intJumlah+intX;
+                System.out.println("Karakter ASCII index ke "+i+" ADALAH "+chX+" Kode ASCII nya adalah "+intX);
 
 
             }
             System.out.println("Number ASCII : "+strInput.charAt(i)+" -> "+intX);
-            System.out.println("Jumlah Ke : "+intJumlah);
 
         }
+        System.out.println("Jumlah Ke : "+intJumlah);
 
 //        int [] array = {2, 7, 3, 5, 8, 9};
 //        int kuncen = array[0];

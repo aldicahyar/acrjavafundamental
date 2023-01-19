@@ -17,7 +17,8 @@ public class FlowChartExample {
 
         //deklarasi dan inisialisasi
         Scanner sc = new Scanner(System.in);
-        int intNumber = 0, intTotal = 0;
+        int intNumber = 0;
+        double doTotal = 0.0;
         boolean isAgain = true;
 
         try {
@@ -25,10 +26,10 @@ public class FlowChartExample {
             do {
                 intNumber = sc.nextInt();//input
 
-                intTotal += intNumber;//proses penjumlahan input
+                doTotal += intNumber;//proses penjumlahan input
             } while (isAgain);//perulangan utk input kembali
         } catch (Exception e) {//exception handling utk input karakter
-            System.out.println("Jumlah: " + intTotal);//output
+            System.out.println("Jumlah: " + doTotal);//output
             System.exit(0);//keluar dari sistem
         }
     }
