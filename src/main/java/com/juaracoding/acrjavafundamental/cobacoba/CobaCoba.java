@@ -253,30 +253,25 @@ public class CobaCoba {
 //            System.exit(0);//keluar dari sistem
 //        }
 
-        double doSum = 0;
-        int intCount = 0;
-
-        System.out.print("Masukkan angka sepuasnya: ");
-        while (true) {
-            try {
-                double doInput = sc.nextDouble();
-                doSum += doInput;
-                intCount++;
-            } catch (Exception e) {
-                break;
-            }
-        }
-
-        double doAverage = doSum / intCount;
-        System.out.println("Nilai Rata-Rata : " + doAverage);
-
+//        double doSum = 0;
+//        int intCount = 0;
+//
+//        System.out.print("Masukkan angka sepuasnya: ");
+//        while (true) {
+//            try {
+//                double doInput = sc.nextDouble();
+//                doSum += doInput;
+//                intCount++;
+//            } catch (Exception e) {
+//                break;
+//            }
+//        }
+//
+//        double doAverage = doSum / intCount;
+//        System.out.println("Nilai Rata-Rata : " + doAverage);
 
 
 //        Batas Soal Nomor 1 Praktikum 2 Java Fundamental
-
-
-
-
     }
 
 }
