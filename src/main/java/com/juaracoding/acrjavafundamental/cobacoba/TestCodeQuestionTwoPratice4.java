@@ -1,20 +1,19 @@
-package com.juaracoding.acrjavafundamental.testharian.praktikum_4;
+package com.juaracoding.acrjavafundamental.cobacoba;
 
 /*
 IntelliJ IDEA 2022.3.1 (Community Edition)
 Build #IC-223.8214.52, built on December 20, 2022
 @Author aldic  a.k.a Aldi Cahya Ramadhan
 Java Developer
-Created on 30/01/2023 21:06
-@Last Modified 30/01/2023 21:06
+Created on 02/02/2023 12:49
+@Last Modified 02/02/2023 12:49
 Version 1.1
 */
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
-public class Praktikum4 {
-    /*
-	Soal Nomor 2 Praktikum 4 Java Fundamental
-    */
+
+public class TestCodeQuestionTwoPratice4 {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         int intSelect;
@@ -50,11 +49,11 @@ public class Praktikum4 {
                         luasBelahKetupat();
                         break;
                     default:
-                        System.out.println("Pilihan Tidak Tersedia");
+                        System.out.println("Pilihan tidak tersedia");
                         continue;
                 }
             }catch (InputMismatchException e) {
-                System.out.println("Input Harus Angka");
+                System.out.println("Input harus angka");
                 input.nextLine();
                 continue;
             }
@@ -67,7 +66,7 @@ public class Praktikum4 {
     }
 
     private static void luasLingkaran() {
-        System.out.print("Masukkan Jari-Jari: ");
+        System.out.print("Masukkan jari-jari: ");
         double douR = input.nextInt();
         double douWide = Math.PI * douR * douR;
         System.out.println("Anda menghitung luas lingkaran dengan input jari-jari adalah " + douR + " cm" + " Luas lingkaran adalah " + douWide);
@@ -83,26 +82,27 @@ public class Praktikum4 {
     }
 
     private static void luasPersegi() {
-        System.out.print("Masukkan Sisi: ");
+        System.out.print("Masukkan sisi: ");
         double douSide = input.nextDouble();
         double douWide = douSide * douSide;
         System.out.println("Anda menghitung luas persegi dengan input sisi " + douSide + " Luas persegi adalah " + douWide);
     }
 
     private static void luasSegitiga() {
-        System.out.print("Masukkan Alas: ");
+        System.out.print("Masukkan alas: ");
         double douAlas = input.nextDouble();
-        System.out.print("Masukkan Tinggi: ");
+        System.out.print("Masukkan tinggi: ");
         double douHigh = input.nextDouble();
         double douWide = 0.5 * douAlas * douHigh;
         System.out.println("Anda menghitung luas segitiga dengan input alas " + douAlas + " dan tinggi " + douHigh + " Luas segitiga adalah " + douWide);
     }
     private static void luasBelahKetupat() {
-        System.out.print("Masukkan Diagonal 1: ");
+        System.out.print("Masukkan diagonal 1: ");
         double douDiagonal1 = input.nextDouble();
-        System.out.print("Masukkan Diagonal 2: ");
+        System.out.print("Masukkan diagonal 2: ");
         double douDiagonal2 = input.nextDouble();
         double douWide = 0.5 * douDiagonal1 * douDiagonal2;
         System.out.println("Anda menghitung luas belah ketupat dengan input diagonal 1 " + douDiagonal1 + " dan diagonal 2 " + douDiagonal2 + " Luas belah ketupat adalah " + douWide);
     }
+
 }

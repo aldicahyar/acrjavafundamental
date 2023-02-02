@@ -17,30 +17,39 @@ public class TestCodeQuestionOnePractice4 {
     public static void main(String[] args) {
         Random random = new Random();
         String strCharRandom = "abcdefghijklmnopqrstuvwxyz";
-        String strConnectorRandom = "_.";
-        String strProviderEmail = "gmail,hotmail,yahoo,ymail";
+        String strConnectorRandom = ".";
         String strDot = ".";
-        String strDomain = "com,co.id,gov,edu,sch,org,xyz";
+        String strProviderEmail = "gmail,hotmail,yahoo,ymail";
         String [] strProviderEmailList = strProviderEmail.split(",");
+        String strDomain = "com,co.id,gov,edu,sch,org,xyz";
         String [] strDomainList = strDomain.split(",");
-        int length = random.nextInt(25,30);
+//        String strOutput = "";
+        int intCharRandom = strCharRandom.length()-1;
+        int intProviderEmail = strProviderEmail.length()-1;
+        int intDomain = strDomain.length()-1;
+        int nextInt = random.nextInt(25, 40);
         StringBuilder email = new StringBuilder();
-        for (int i=0;i<length;i++){
+        for (int i=0;i<nextInt-1;i++){
+//            if(i < 25){
+//                strOutput += strCharRandom
+//            }
+
             switch (i){
-                case 11:
-                case 18:
+                case 5:
                     email.append(strConnectorRandom.charAt(random.nextInt(strConnectorRandom.length())));
                     break;
                 case 8:
                     email.append(random.nextInt(100));
                     break;
-//                case 23:
+//                case 37:
 //                    email.append("@");
 //                    break;
-//                case 24:
+//                case 38:
 //                    email.append(strProviderEmailList[random.nextInt(strProviderEmailList.length)]);
 //                    break;
-//                case 25:
+//                case 39:
+//                    email.append(strDot);
+//                case 40:
 //                    email.append(strDomainList[random.nextInt(strDomainList.length)]);
 //                    break;
                 default:
@@ -48,7 +57,11 @@ public class TestCodeQuestionOnePractice4 {
                     break;
             }
         }
-        System.out.println(email.append("@")+strProviderEmailList[random.nextInt(strProviderEmailList.length)]+strDot+strDomainList[random.nextInt(strDomainList.length)]);
+//        System.out.println(email.append("@")+strProviderEmailList[random.nextInt(strProviderEmailList.length)]+strDot+strDomainList[random.nextInt(strDomainList.length)]);
+//        System.out.println(email.toString());
+//        System.out.println(email.append(strProviderEmailList[random.nextInt(strProviderEmailList.length)]).append(strDot).append(strDomainList[strDomain.length()]));
+        System.out.println(email.append("@").append(strProviderEmailList[random.nextInt(strProviderEmailList.length)]).append(strDot).append(strDomainList[random.nextInt(strDomainList.length)]));
         System.out.println(email.length());
+
     }
 }
