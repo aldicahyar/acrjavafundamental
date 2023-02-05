@@ -27,9 +27,9 @@ public class TestCodeQuestionOnePractice4 {
         int intCharRandom = strCharRandom.length()-1;
         int intProviderEmail = strProviderEmail.length()-1;
         int intDomain = strDomain.length()-1;
-        int nextInt = random.nextInt(25, 40);
+        int length = random.nextInt(25, 40)-1;
         StringBuilder email = new StringBuilder();
-        for (int i=0;i<nextInt-1;i++){
+        for (int i=0;i<length;i++){
 //            if(i < 25){
 //                strOutput += strCharRandom
 //            }
