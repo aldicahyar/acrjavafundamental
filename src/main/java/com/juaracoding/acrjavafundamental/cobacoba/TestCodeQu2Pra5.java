@@ -14,6 +14,11 @@ import java.util.Scanner;
 
 public class TestCodeQu2Pra5 {
 
+    /*
+	Soal Nomor 2 Praktikum 5 Java Fundamental
+    */
+
+
     public static void main(String[] args) {
         int intVariable1, intVariable2, intResult;
         System.out.print("Masukkan Jumlah Baris : ");
