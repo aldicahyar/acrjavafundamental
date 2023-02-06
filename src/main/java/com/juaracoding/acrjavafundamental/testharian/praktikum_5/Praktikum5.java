@@ -10,5 +10,21 @@ Created on 05/02/2023 15:18
 Version 1.1
 */
 
+import java.util.Scanner;
+
 public class Praktikum5 {
+
+    public static void main(String[] args) {
+        int intVariable1, intVariable2, intResult;
+        System.out.print("Masukkan Jumlah Baris : ");
+        Scanner scanner = new Scanner(System.in);
+        intResult = (int) scanner.nextInt();
+
+        for (intVariable1 = 1; intVariable1 <= intResult; intVariable1++) {
+            for (intVariable2 = 1; intVariable2 <= intVariable1; intVariable2++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }

@@ -36,22 +36,22 @@ public class TestCodeQu1Pra5 {
 //        }
 
         /*Pendeklarasian variabel*/
-        int i, j, n, s;
+        int intNilai, intNilai2, intInput, intHasil;
         /*Inputan*/
         System.out.print ("Masukan jumlah baris : ");
         Scanner sc = new Scanner(System.in);
-        n = (int) sc.nextInt();
+        intInput = (int) sc.nextInt();
         /*Perulangan*/
-        for (i = 1; i <= n; i++)
+        for (intNilai = 1; intNilai <= intInput; intNilai++)
         {
-            s = n - i;
-            for(j = 1; j <= s; j++)
+            intHasil = intInput - intNilai;
+            for(intNilai2 = 1; intNilai2 <= intHasil; intNilai2++)
             {
                 System.out.print(" ");  /*Menampilkan jarak dengan spasi*/
             }
-            for (j = i; j >= 1; j--)
+            for (intNilai2 = intNilai; intNilai2 >= 1; intNilai2--)
             {
-                System.out.print(j);  /*Menampilkan simbol bintang*/
+                System.out.print(intNilai2);  /*Menampilkan simbol bintang*/
             }
             System.out.println();
         }
