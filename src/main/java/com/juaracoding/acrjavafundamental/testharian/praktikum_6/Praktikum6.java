@@ -19,6 +19,7 @@ public class Praktikum6 {
 
     public static void main(String[] args) {
 
+
         Scanner scanner = new Scanner(System.in);
         int[] intNumber = new int[100];
         int intCount = 0;
